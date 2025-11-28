@@ -9,6 +9,7 @@
 body {
   padding: 0;
   margin: 0;
+  touch-action: manipulation;
 }
 
 nav {
@@ -53,7 +54,8 @@ a:hover {
 }
 
 .board {
-  width: 450px;
+  width: 90vw;
+  max-width: 450px;
   height: 550px;
   border: 1px solid black;
   display: flex;
@@ -93,7 +95,8 @@ a:hover {
 }
 
 .keyboard {
-  width: 700px;
+  width: 90vw;
+  max-width: 700px;
   height: 300px;
   margin-top: 60px;
 }
@@ -128,4 +131,89 @@ a:hover {
 
 #disabled {
   background-color: #3a393c;
+}
+
+@media (max-width: 768px) {
+  nav h1 {
+    font-size: 32px;
+  }
+
+  .board {
+    height: 500px;
+  }
+
+  .letter {
+    font-size: 24px;
+  }
+
+  .keyboard {
+    height: 240px;
+    margin-top: 0;
+  }
+
+  .key {
+    width: 40px;
+    height: 60px;
+    font-size: 16px;
+  }
+
+  #big {
+    width: 80px;
+  }
+
+  .game {
+    padding-top: 30px;
+    height: calc(100vh - 120px);
+  }
+
+  nav {
+    padding: 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  nav h1 {
+    font-size: 24px;
+  }
+
+  .board {
+    height: 400px;
+    width: 95vw;
+  }
+
+  .letter {
+    font-size: 20px;
+  }
+
+  .keyboard {
+    height: 150px;
+
+  }
+
+  .key {
+    width: 30px;
+    height: 45px;
+    font-size: 14px;
+  }
+
+  #big {
+    width: 60px;
+  }
+
+  .game {
+
+    height: calc(100vh - 100px);
+  }
+}
+
+@media (max-width: 320px) {
+  .key {
+    width: 25px;
+    height: 40px;
+    font-size: 12px;
+  }
+
+  #big {
+    width: 50px;
+  }
 }
