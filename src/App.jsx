@@ -99,7 +99,7 @@ function App()
           </a>
         </div>
       </nav>
-      <p><b>Instructions:</b> Try and find the world. If a letter becomes yellow, it is in the word, if it is green, it is also in the correct position.</p>
+      <p><b>Instructions:</b> Try and find the word. If a letter becomes yellow, it is in the word, if it is green, it is also in the correct position.</p>
       <AppContext.Provider value={{
         board, setBoard, currAttempt, setCurrAttempt, onSelectLetter, onDelete, onEnter,
         correctWord, disabledLetters, setDisabledLetters, gameOver, setGameOver
